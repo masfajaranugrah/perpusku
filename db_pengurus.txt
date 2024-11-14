@@ -1,0 +1,5 @@
+INSERT INTO `pengurus`(`id_pengurus`, `nama`, `email`, `username`, `password`, `telepon`, `alamat`, `jabatan`) 
+VALUES 
+(1, 'admin perpus', 'admin@gmail.com', 'adminperpus', '$2y$10$SweE3rbls0J3utemv.XtV.04SxwyuAe/5a.hPelFYJHDIOZzg88M6', '085752965610', 's', 'Admin'),
+(2, 'b', 'a', 'a', '$2y$10$jUr6VYXcqyRUXV7gh5q1jujQPz48oTJJpXkDBLvPUJSByCEnYQ4kW', '1', 'Jl hm arsyad km 28', 'Petugas'),
+(3, 'm', 'm', 'm', '$2y$10$3aPnzWSIjCwiLHMZkjW77eRPtHcghf4suFlJGhXZSdAk1i0iON40m', '6582', 'm', 'Admin');
