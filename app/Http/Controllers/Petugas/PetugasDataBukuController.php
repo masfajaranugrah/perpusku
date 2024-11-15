@@ -23,6 +23,7 @@ class PetugasDataBukuController extends Controller
     {
         // Validate the request data
         $request->validate([
+            'kode_buku' => 'required|string|max:255',
             'judul' => 'required|string|max:255',
             'pengarang' => 'required|string|max:255',
             'jenis' => 'required|string|max:100',
@@ -45,6 +46,7 @@ class PetugasDataBukuController extends Controller
     
         // Generate a random 8-digit ID (as the previous one only generated 5 digits)
         $buku->id_buku = str_pad(rand(10000000, 99999999), 8, '0', STR_PAD_LEFT); // Ensure unique and correct ID length
+        $buku->kode_buku = $request->kode_buku;
         $buku->judul = $request->judul;
         $buku->pengarang = $request->pengarang;
         $buku->jenis = $request->jenis;

@@ -57,7 +57,7 @@
                                                                                         <div class="form-control-icon">
                                                                                             <i class="bi bi-book"></i>
                                                                                         </div>
-                                                                                        v
+                                                                                        
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group has-icon-left">
@@ -219,6 +219,7 @@
 
                                             </td>
                                             <td>{{$data->id_buku}}</td>
+                                            <td>{{$data->kode_buku}}</td>
                                                 <td>{{$data->judul}}</td>
                                                 <td>{{$data->pengarang}} </td>
                                                 <td>{{$data->jenis}}</td>

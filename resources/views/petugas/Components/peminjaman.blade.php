@@ -75,6 +75,7 @@
                                     <thead>
                                         <tr>
                                             <th>Nama</th>
+                                            <th>Kode Buku</th>
                                             <th>Judul Buku</th>
                                             <th>Tanggal </th>
                                         </tr>
@@ -85,6 +86,7 @@
                                         @foreach ($peminjamans as $peminjaman)
                                             <tr>
                                                 <td class="text-bold-500">{{ $peminjaman->anggota->nama }}</td>
+                                                <td>{{ $peminjaman->buku->kode_buku }}</td>
                                                 <td>{{ $peminjaman->buku->judul }}</td>
                                                 <td class="text-bold-500">{{ $peminjaman->tanggal_peminjaman }}</td>
                                             </tr>

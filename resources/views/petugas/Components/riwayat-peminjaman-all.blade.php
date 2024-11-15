@@ -34,6 +34,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th></th>
+                                                        <th>Kode Buku</th>
                                                         <th>Judul Buku</th>
                                                         <th>Nama</th>
                                                         <th>Angkatan</th>
@@ -48,6 +49,7 @@
                                                             <td>
                                                                 <input type="checkbox" name="peminjaman_ids[]" value="{{ $data->id_peminjaman }}">
                                                             </td>
+                                                            <td>{{ $data->buku->kode_buku }}</td>
                                                             <td>{{ $data->buku->judul }}</td>
                                                             <td>{{ $data->anggota->nama }}</td>
                                                             <td>{{ $data->anggota->angkatan }}</td>
